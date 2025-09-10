@@ -56,20 +56,6 @@
           return `It's a tie, you both played ${computerChoice}!`;
         }
       }
-
-      while (round < 5) {
-        console.log(playRound(getHumanChoice(), getComputerChoice()));
-      }
-
-      if (humanScore > computerScore) {
-        console.log(`Congrats, after a hard fought battle, you won! The score was ${humanScore}:${computerScore} to you.`);
-      }
-      else if (humanScore < computerScore) {
-        console.log(`Despite your noble efforts, the computer emerged victorious. The score was ${computerScore}:${humanScore} to the computer.`);
-      }
-      else {
-        console.log(`After a tense battle, you and the computer tied! The score was ${computerScore}:${humanScore}.`);
-      }
     }
 
     playGame();
